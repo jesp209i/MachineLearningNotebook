@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ef017ecbd8c4a523bb2f3cca079afc0b52b8d716d26c4487e70ab33638c27989"
+            "sha256": "5e1239e636d18a642c0f87c67fc18e33eed858bb9746331093d62dca43f73df1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -342,10 +342,10 @@
         },
         "parso": {
             "hashes": [
-                "sha256:56b2105a80e9c4df49de85e125feb6be69f49920e121406f15e7acde6c9dfc57",
-                "sha256:951af01f61e6dccd04159042a0706a31ad437864ec6e25d0d7a96a9fbb9b0095"
+                "sha256:0c5659e0c6eba20636f99a04f469798dca8da279645ce5c387315b2c23912157",
+                "sha256:8515fc12cfca6ee3aa59138741fc5624d62340c97e401c74875769948d4f2995"
             ],
-            "version": "==0.6.1"
+            "version": "==0.6.2"
         },
         "pickleshare": {
             "hashes": [
@@ -499,6 +499,7 @@
                 "sha256:ebdf03b6e7f784e360ab26cf400cd2125d650c0903ef11086c0a3f2b4b07e603",
                 "sha256:f18ae2abc09cb94a171840829a8132dda7267c941eb431387a6014f943946825"
             ],
+            "index": "pypi",
             "version": "==0.22.1"
         },
         "scipy": {

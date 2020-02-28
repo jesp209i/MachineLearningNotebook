@@ -12,6 +12,7 @@ jupyter = "*"
 seaborn = "*"
 matplotlib = "*"
 sklearn = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.8"
