@@ -7,14 +7,14 @@ Macine learning kan deles op i to overordnede faser:
 
 ## Fase 1: Learning
 Denne fase består groft sagt af 3 steps:
-- Preprocessing - det vil sige klargøring af data
+- [Preprocessing](./preprocessing/README.md) - det vil sige klargøring af data
   - clean data
   - formater data
-- Learning - du træner modellerne indenfor:
-  - Supervised learning
-  - Unsupervised learning
+- [Learning](./learning/README.md) - du træner modellerne indenfor:
+  - [Supervised learning](./learning/supervised.md)
+  - [Unsupervised learning](./learning/unsupervised.md)
   - Reinforcement learning
-- Testing - du tester hvor fornuftige dine modeller bearbejder data
+- [Testing](./testing/README.md) - du tester hvor fornuftige dine modeller bearbejder data
   - mål om modellen er performant
   - test om den valgte algoritme er god
 
