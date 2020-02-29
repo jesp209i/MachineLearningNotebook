@@ -1,4 +1,4 @@
-# Måling af modellers resultater
+# gamle noter // Måling af modellers resultater
 
 Nøjagtighed = korrekte resultater / totale antal af data points
 
