@@ -12,6 +12,8 @@ Pandas indholder selvfølgelig flere muligheder for at importere (og eksportere)
 - [Pandas IO docs](https://pandas.pydata.org/docs/user_guide/io.html)
 
 # undersøg data
+`sample_df` er vores variabal som indeholder en DataFrame.
+
 - `sample_df.info()`
   - Giver et overblik over hvilken type data hver række indeholder, samt hvor mange værdier der er i hver række
 - `sample_df.head()` eller  `sample_df.tail()`
@@ -22,3 +24,5 @@ Pandas indholder selvfølgelig flere muligheder for at importere (og eksportere)
     - Kolonnens gennemsnitsværdi
     - Kolonnens standard afvigelse
     - kolonnens max og min værdi
+- `sample_df.dtypes.value_counts()`
+  - tæller antallet af kolonner og summerer på type
