@@ -20,14 +20,15 @@ Ud fra tidligere inputdata forudsiger maskinen en kontinuerlig output værdi.
 Bruges til at analysere og gruppere data der ikke inkluderer pre-labeled klasser
 
 ### Algoritmer
-- K-means
+- [K-means](./unsupervised/kmeans.md)
 - Hierarkisk clustering
 - Hidden Markov model
 
 ## Association
-  "Discovers the probability of the co-occurance of items in a collection"
+  _"Discovers the probability of the co-occurance of items in a collection"_
   
 eller "Andre kunder købte også..."
+
 ### Algoritmer
 - Apriori algoritmen
 - FP-grow
