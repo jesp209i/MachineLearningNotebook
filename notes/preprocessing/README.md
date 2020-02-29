@@ -7,13 +7,13 @@ import numpy as pd
 ```
 
 ## Workflows
-- [Indlæs og inspicer data](importinspect.md)
-- [Manglende værdier](missingvalues.md)
+- [Indlæs og inspicer data](wf_importinspect.md)
+- [Manglende værdier](wf_missingvalues.md)
 
 ## Værktøjer
-- [Pipeline](pipeline.mp)
-- [StandardScaler](standardscaler.md)
-- [Normalizer](normalizer.md)
+- [Pipeline](t_pipeline.mp)
+- [StandardScaler](t_standardscaler.md)
+- [Normalizer](t_normalizer.md)
 
 # gamle noter//Preprocessing data
  Scikit-learn understøtter ikke kategori features per default
