@@ -7,6 +7,8 @@ import numpy as pd
 ```
 
 ## Workflows
+- [Indlæs data](importdata.md)
+- [Inspicer data](inspect.md)
 - [Manglende værdier](missingvalues.md)
 
 ## Værktøjer
