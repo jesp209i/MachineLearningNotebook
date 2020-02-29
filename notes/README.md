@@ -5,6 +5,9 @@ Macine learning kan deles op i to overordnede faser:
 - Fase 1: Learning
 - Fase 2. Prediction
 
+Derudover kan der være behov for visualisering af data, enten undervejs eller til slut:
+- [Visualisering](./visualization/README.md)
+
 ## Fase 1: Learning
 Denne fase består groft sagt af 3 steps:
 - [Preprocessing](./preprocessing/README.md) - det vil sige klargøring af data
