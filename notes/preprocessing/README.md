@@ -9,6 +9,7 @@ import numpy as pd
 ## Workflows
 - [Indlæs og inspicer data](wf_importinspect.md)
 - [Manglende værdier](wf_missingvalues.md)
+- [Opdel datasæt](wf_traintestsplit.md)
 
 ## Værktøjer
 - [Pipeline](t_pipeline.mp)
