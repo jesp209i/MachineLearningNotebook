@@ -12,7 +12,7 @@ import numpy as pd
 - [Opdel datasæt](wf_traintestsplit.md)
 
 ## Værktøjer
-- [Pipeline](t_pipeline.mp)
+- [Pipeline](t_pipeline.md)
 - [StandardScaler](t_standardscaler.md)
 - [Normalizer](t_normalizer.md)
 
