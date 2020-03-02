@@ -7,14 +7,18 @@ import numpy as pd
 ```
 
 ## Workflows
-- [Indlæs og inspicer data](wf_importinspect.md)
+- [Indlæs og inspicer data](t_pandas.md)
 - [Manglende værdier](wf_missingvalues.md)
-- [Opdel datasæt](wf_traintestsplit.md)
+- [Opdel datasæt](t_traintestsplit.md)
 
-## Værktøjer
+## sklearn Værktøjer
 - [Pipeline](t_pipeline.md)
 - [StandardScaler](t_standardscaler.md)
 - [Normalizer](t_normalizer.md)
+- [PolynomialFeatures](t_polynomialfeatures.md)
+- [HashingVectorizer](t_hashingvectorizer.md)
+- [CountVectorizer](t_countvectorizer.md)
+- [train_test_split](t_traintestsplit.md)
 
 # gamle noter//Preprocessing data
  Scikit-learn understøtter ikke kategori features per default

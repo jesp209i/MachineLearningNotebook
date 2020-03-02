@@ -10,8 +10,9 @@ Derudover kan der være behov for visualisering af data, enten undervejs eller t
 
 ## Fase 1: Learning
 Denne fase består groft sagt af 3 steps:
-- [Preprocessing](./preprocessing/README.md) - det vil sige klargøring af data
-  - clean data
+- [Preprocessing](./preprocessing/README.md)
+  - import af data
+  - cleaning af data
   - formater data
 - [Learning](./learning/README.md) - du træner modellerne indenfor:
   - [Supervised learning](./learning/supervised.md)

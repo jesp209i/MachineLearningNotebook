@@ -30,3 +30,6 @@ Pandas indholder selvfølgelig flere muligheder for at importere (og eksportere)
     - kolonnens max og min værdi
 - `sample_df.dtypes.value_counts()`
   - tæller antallet af kolonner og summerer på type
+
+# links
+- [Data manipulation for ML with pandas](https://towardsdatascience.com/data-manipulation-for-machine-learning-with-pandas-ab23e79ba5de)
