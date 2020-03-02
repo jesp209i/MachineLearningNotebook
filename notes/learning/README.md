@@ -32,3 +32,6 @@ eller "Andre kunder købte også..."
 ### Algoritmer
 - Apriori algoritmen
 - FP-grow
+
+# Andet
+- [Scikit-learn ML cheat sheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)

@@ -7,6 +7,10 @@ import pandas as pd
 sample_df = pd.read_csv('sample_data.csv')
 ```
 pd.read_csv() indlæser data fra en csv-fil.
+- nrows giver mulighed for at angive for mange rækker man vil indlæse:
+````python
+sample_df = pd.read_csv('sample_data.csv', nrows=2000) # importerer de første 2000 rows
+````
 
 Pandas indholder selvfølgelig flere muligheder for at importere (og eksportere) data:
 - [Pandas IO docs](https://pandas.pydata.org/docs/user_guide/io.html)
