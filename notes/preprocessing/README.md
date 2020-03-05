@@ -10,6 +10,7 @@ import numpy as pd
 - [Indlæs og inspicer data](t_pandas.md)
 - [Manglende værdier](wf_missingvalues.md)
 - [Opdel datasæt](t_traintestsplit.md)
+- [udvælg relevante features](wf_features.md)
 
 ## sklearn Værktøjer
 - [Pipeline](t_pipeline.md)
