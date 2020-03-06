@@ -31,5 +31,6 @@ sklearn model_selection FTest og Chi squared
 8. forward selection
 9. backward elimination (RFE)
 10. Stepwise selection
+  - 
 11. LASSO
 12. Tree-based selection

@@ -51,7 +51,9 @@ For alle statestikfunktioner gælder det at 'null'-værdier ignoreres.
 # Find data i Dataframe
 - `sample_df.loc['data']`
   - 'data' kan være mange ting - eksempelvis datoer.
-  
+
+# flet to dataframes sammen
+- `pd.merge()`  
  
 # Broadcasting
 Skab en ny kolonne i den dataframe der arbejdes i, og placer en værdi i alle felterne
