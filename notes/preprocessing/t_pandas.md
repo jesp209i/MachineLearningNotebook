@@ -47,6 +47,16 @@ For alle statestikfunktioner gælder det at 'null'-værdier ignoreres.
   - (0.25) ville svare til tallet det ligger på 25% inde i datasættet
 - `sample_df.min()` eller `sample_df.max()`  
   - viser den laveste eller højeste værdi for alle tal kolonner
+
+# type af data i en dataframe
+- `sample_df.dtypes`
+  - giver adgang til kolonne-navne og viser typen for hver.
+- `nummeric = sample_df.select_dtypes(include=['int','float'])`
+  - vælger alle kolonnerne af typerne `int` og `float` og placerer dem i variable `nummeric`
+
+# tæl værdier i en kolonne
+- `counts = sample_df['Country'].value_counts()`
+  - tæller hvor mange gange nogle de forskellige værdier optræder i kolonnen, og placerer informationen i variablen `counts`
  
 # Find data i Dataframe
 - `sample_df.loc['data']`
