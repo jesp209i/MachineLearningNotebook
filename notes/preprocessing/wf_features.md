@@ -119,3 +119,22 @@ Hvis en kolonne som burde være nummerisk, indeholde forkerte tegn (eksempelvis 
 df['RawSalary'] = df['RawSalary'].str.replace(',', '')
 df['RawSalary'] = df['RawSalary'].astype('float')  # konverter kolonne til komma-tal
 ```
+
+# Fjern afvigelser 
+Afvigelser (outliers) er datapunkter som ligger langt fra resten
+
+Fjern de "bagerste" 5% af datasættet
+```python
+q_cutoff = df['col_name'].quantile(0.95)
+mask = df['col_name'] < q_cutoff
+trimmed_df = df[mask]
+```
+
+En anden og måske mere statistisk korrekt måde er at fjerne data som ligger længere væk end 3 standardafvigelser fra mean
+```python
+mean = df['col_name'].mean()
+std = df['col_name'].std()
+cut_off = std * 3
+lower, upper = mean - cut_off, mean + cut_off
+new_df = df[(df['col_name'] < upper) & (df['col_name'] > lower)]
+```

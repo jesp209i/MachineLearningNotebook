@@ -36,3 +36,7 @@ counts = df['Country'].value_counts()
 mask = df['Country'].isin(counts[counts < 5].index) 
 df['Country'][mask] = 'Other'
 ```
+
+# Data leakage
+Hvis man bruger test-data til at fitte sin model bliver præcitionen ikke god. 
+I virkeligheden har man ikke adgang til 'test-data'.
