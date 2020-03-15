@@ -48,6 +48,19 @@ For alle statestikfunktioner gælder det at 'null'-værdier ignoreres.
 - `sample_df.min()` eller `sample_df.max()`  
   - viser den laveste eller højeste værdi for alle tal kolonner
 
+# Fjern dubletter 
+```python
+df.drop_duplicates(subset=['col_name','another_col_name'])
+```
+Fjerner data hvis der er flere forekomster af samme data i en eller flere kolonner.
+- hvis man angiver flere kolonner skal alle kolonner have samme data før de fjernes
+
+# grupper data
+```python
+df.groupby("col_name")['another_col_name'].mean()
+```
+Ovenstående kode grupperer data baseret på værdien i `col_name` og tar gennemsnittet af de grupperede værdier i `another_col_name`
+
 # type af data i en dataframe
 - `sample_df.dtypes`
   - giver adgang til kolonne-navne og viser typen for hver.
@@ -57,9 +70,22 @@ For alle statestikfunktioner gælder det at 'null'-værdier ignoreres.
 # tæl værdier i en kolonne
 - `counts = sample_df['Country'].value_counts()`
   - tæller hvor mange gange nogle de forskellige værdier optræder i kolonnen, og placerer informationen i variablen `counts`
- 
+
+# sorter i data
+```python
+df.sort_values('col_name', ascending=True)
+```
+sorterer dataframe baseret på de data der er i kolonnen `col_name`
+  - `ascending=True` svarer til stigende værdier 
+
+```python
+df.sort_index()
+```
+sorterer dataframen baseret på dens index kolonne
+
 # Find data i Dataframe
 - `sample_df.loc['data']`
+  - `.loc[]` kan kun bruges til at finde værdier i dataframens  kolonne/r
   - 'data' kan være mange ting - eksempelvis datoer.
 
 # flet to dataframes sammen
@@ -116,6 +142,17 @@ pd.read_csv('sample_data.csv', parse_dates=True, index_col='dato kolonne')
 - `index_col` 
   - skal ikke nødvendigvis angives, men på den måde kan man bruge tiddato formatet som index på tabellen.
 
+### Converter en allerede importeret dato
+Det sker at datoer bliver importeret som `object`. De kan konverteres på følgende måde:
+- Pandas er importeret
+- DataFrame importeret som df
+- df indeholder kolonnen `date`, som er typen object og skal konverteres
+```python
+df['date'] = pd.to_datetime(df['date'])
+```
+
+
+### Bearbejd data til at vise gennemsnitlig daglige målepunkter 
 - `daily_mean = sample_df.resample('D').mean()`
   - skaber en ny variable som tar gennemsnittet per dag (D = daily)
   - resample bruges altid sammen med en statistisk funktion
@@ -130,6 +167,36 @@ pd.read_csv('sample_data.csv', parse_dates=True, index_col='dato kolonne')
 | 'M' | måned |
 | 'Q' | kvartal |
 | 'A' | år |
+
+### datetime features
+```python
+# sikr at data er datetime
+prices.index = pd.to_datetime(prices.index)
+
+# hent datetime ugedag som nummer
+day_of_week_num = prices.index.weekday
+# hent datetime ugedag som tekst
+day_of_week = prices.index.weekday_name
+```
+
+## Reshape
+> 'Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+
+## Udfør flere statistik funktioner på dataframes
+```python
+features_to_calculate = [np.min, np.max, np.mean, np.std]
+features = df.aggregate(features_to_calculate)
+
+# alternativ:
+alt_features = df.agg(features_to_calculate)
+```
+
+## pivottabel
+```python
+df.pivot_table(values='col_name', index='another_col_name', aggfunc=[np.median, np.mean])
+
+df.pivot_table(values='col_name', index='another_col_name', columns='yet_another_col', fill_value=0, margins=True)
+```
 
 # links
 - [Data manipulation for ML with pandas](https://towardsdatascience.com/data-manipulation-for-machine-learning-with-pandas-ab23e79ba5de)

@@ -79,3 +79,50 @@ plt.ylabel("Incidence", rotation=0, rotation_mode="anchor", ha = "right")
 plt.xlabel("Income")
 plt.show()
 ```
+
+## Plot en timeseries fra Pandas
+```Python
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(12,6))
+data.plot('date', 'close', ax=ax)
+ax.set(title='AAPL daily closing price')
+```
+
+## Plot hver feature i et datasæt
+Kræver muligvis at index i datasættet er en pandas timeseries
+```python
+fig, ax = plt.subplots()
+for column in data:
+    data[column].plot(ax=ax, label=column)
+ax.legend()
+plt.show()
+```
+
+## Visualiser relationer mellem timeseries
+```python
+fig, axs = plt.subplots(1,2)
+
+# make a line plot for each timeseries
+axs[0].plot(x , c='k', lw=3, alpha=.2)
+axs[0].plot(y)
+axs[0].set(xlabel='time', title='X values = time')
+
+# encode time as color in a scatterplot
+ax[1].scatter(x_long, y_long, c=np.arange(len(x_long)), cmap='viridis')
+axs[1].set(xlabel='x', ylabel='y', title='Color = time')
+```
+
+## visualiser outliers
+```python
+fig, axs = plt.subplots(1,2, figsize=(10,5))
+for data, ax in zip([prices, prices_perc_change], axs):
+    # Calculate the mean / standard deviation for the data
+    this_mean = data.mean()
+    this_std = data.std()
+
+    # plot the data, with a window that is 3 standard deviations around the mean
+    data.plot(ax=ax)
+    ax.axhline(this_mean + this_std * 3, ls='--', c='r')
+    ax.axhline(this_mean - this_std * 3, ls='--', c='r')
+
+```
