@@ -13,7 +13,7 @@ seaborn = "*"
 matplotlib = "*"
 sklearn = "*"
 scikit-learn = "*"
-scikitplot = "*"
+scikit-plot = "*"
 
 [requires]
 python_version = "3.8"
